@@ -12,7 +12,7 @@ const MainLayout = ({ children }) => {
       </div>
       <div className="boilerplate flex">
         <div
-          className="relative w-7/12  blueBoiler bg-cover bg-center bg-no-repeat flex flex-col gap-6  px-16 text-white min-h-screen pt-48"
+          className="relative w-7/12  blueBoiler bg-cover bg-center bg-no-repeat flex flex-col gap-6  text-white min-h-screen pt-48 px-20"
           style={{ backgroundImage: "url('/assets/Images/Montreal.jpg')" }}
         >
           <div className="absolute bg-blue-500 top-0 left-0 h-full w-full opacity-90"></div>

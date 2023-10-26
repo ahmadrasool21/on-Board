@@ -9,12 +9,12 @@ const Join = () => {
         </p>
       </div>
       {/* // */}
-      <div className="pl-40 mt-20 flex flex-col gap-5">
+      <div className=" px-52 mt-20 flex flex-col gap-5">
         <h1 className="text-black text-xl  font-bold">Join Us!</h1>
         <p className="grey max-w-411">
           To begin this journey, tell us what type of account you’d be opening.
         </p>
-        <div className="flex gap-5 max-w-426 px-7 py-5 shadow-md hover:bg-gray-100 hover:border border-custom-blue rounded transition duration-1000">
+        <div className="border border-transparent flex gap-5 max-w-426 px-7 py-5 shadow-md rounded transition hover:bg-gray-100 hover:border-blue-600">
           <div className="PolyWrapper pt-2 relative">
             <img src="assets/Images/Polygon1.png" />
             <div className="absolute top-5 left-2.5">
@@ -32,7 +32,7 @@ const Join = () => {
         {/* <br /> */}
         {/* //// */}
         {/* <div className="max-w-426 px-7 py-5 shadow-md transition duration-900 hover:border-transparent hover:border border-custom-blue rounded"> */}
-        <div className="flex gap-5 max-w-426 px-7 py-5 shadow-md hover:bg-gray-100 hover:border border-custom-blue rounded w-full transition duration-1000">
+        <div className="border border-transparent flex gap-5 max-w-426 px-7 py-5 shadow-md rounded transition hover:bg-gray-100 hover:border-blue-600">
           <div className="PolyWrapper pt-2 relative">
             <img src="assets/Images/Polygon2.png" />
             <div className="absolute top-6 left-3.5">

@@ -20,7 +20,7 @@ const CompleteProfile = () => {
       <div className="flex grey pr-20 justify-end">
         <p>Bank Verification</p>
       </div>
-      <div className=" mt-20 pl-40 flex flex-col gap-5 pb-6">
+      <div className=" mt-20 px-48 flex flex-col gap-5 pb-6">
         <h1 className="text-black text-4xl  font-bold">
           Complete Your Profile!
         </h1>

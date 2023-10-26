@@ -22,3 +22,7 @@ code {
 .blue {
   color: #1565d8;
 }
+
+.group:hover .group {
+  border-color: #1e40af; /* Change the border color to blue on hover */
+}

@@ -25,7 +25,7 @@ const Register = () => {
       <div className="flex grey pr-20 justify-end">
         <p>Personal Info</p>
       </div>
-      <div className="pl-40 mt-14 flex flex-col gap-5">
+      <div className="px-48 mt-14 flex flex-col gap-5">
         <h1 className="text-black text-4xl  font-bold">
           Register Individual Account!
         </h1>
