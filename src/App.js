@@ -1,9 +1,9 @@
 // import logo from "./logo.svg";
 // import "./App.css";
-import Join from "./components/Join";
-import MainLayout from "./components/MainLayout";
-import Profile from "./components/Profile";
-import Register from "./components/Register";
+// import Join from "./components/Join";
+// import MainLayout from "./components/MainLayout";
+// import Profile from "./components/Profile";
+// import Register from "./components/Register";
 import Routing from "./components/Routing";
 
 function App() {

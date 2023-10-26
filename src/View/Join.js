@@ -14,7 +14,7 @@ const Join = () => {
         <p className="grey max-w-411">
           To begin this journey, tell us what type of account you’d be opening.
         </p>
-        <div className="flex gap-5 max-w-426 px-7 py-5 shadow-md hover:bg-gray-100 hover:border border-custom-blue rounded">
+        <div className="flex gap-5 max-w-426 px-7 py-5 shadow-md hover:bg-gray-100 hover:border border-custom-blue rounded transition duration-1000">
           <div className="PolyWrapper pt-2 relative">
             <img src="assets/Images/Polygon1.png" />
             <div className="absolute top-5 left-2.5">
@@ -29,8 +29,10 @@ const Join = () => {
             <img src="assets/Images/arrowRight.png" />
           </div>
         </div>
+        {/* <br /> */}
         {/* //// */}
-        <div className="flex gap-5 max-w-426 px-7 py-5 shadow-md hover:bg-gray-100 hover:border border-custom-blue rounded">
+        {/* <div className="max-w-426 px-7 py-5 shadow-md transition duration-900 hover:border-transparent hover:border border-custom-blue rounded"> */}
+        <div className="flex gap-5 max-w-426 px-7 py-5 shadow-md hover:bg-gray-100 hover:border border-custom-blue rounded w-full transition duration-1000">
           <div className="PolyWrapper pt-2 relative">
             <img src="assets/Images/Polygon2.png" />
             <div className="absolute top-6 left-3.5">

@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button";
-import { CmpValidation } from "./CmpValidation";
+import Button from "../components/Button";
+import { CmpValidation } from "../components/CmpValidation";
 import { useFormik } from "formik";
 
 const initialValues = {

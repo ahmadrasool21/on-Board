@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import MainLayout from "./MainLayout";
-import Profile from "./Profile";
-import Join from "./Join";
-import Register from "./Register";
-import CompleteProfile from "./CompleteProfile";
+import MainLayout from "../View/MainLayout";
+import Profile from "../View/Profile";
+import Join from "../View/Join";
+import Register from "../View/Register";
+import CompleteProfile from "../View/CompleteProfile";
 
 export default function Routing() {
   //   const [isAuthenticated, setIsAuthenticated] = useState();

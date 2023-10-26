@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../components/Button";
 import { useFormik } from "formik";
-import { ProfileValidation } from "./ProfileValidation";
+import { ProfileValidation } from "../components/ProfileValidation";
 
 const initialValues = {
   address: " ",

@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "./Button";
-import { RegisterValidation } from "./RegisterValidation";
+import Button from "../components/Button";
+import { RegisterValidation } from "../components/RegisterValidation";
 import { useFormik } from "formik";
-import { reg_Validate } from "./RegisterValidation";
+// import { reg_Validate } from "../components/RegisterValidation";
 
 const initialValues = {
   fname: " ",
