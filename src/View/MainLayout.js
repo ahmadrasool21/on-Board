@@ -7,6 +7,7 @@ const MainLayout = ({ children }) => {
       {/* <div className="absolute top-60  right-20 z-20">
         <img src="assets/Images/Group.png" />
       </div> */}
+
       <div className="absolute bottom-0 left-0 z-20">
         <img src="assets/Images/Vector.png" />
       </div>
@@ -20,13 +21,12 @@ const MainLayout = ({ children }) => {
           {/* <div className=" ">
             <img src="assets/Images/Group.png" />
           </div> */}
-          <div className="flex absolute top-28 gap-3">
+          <div className="flex absolute top-12 gap-3">
             <div>
               <img src="assets/Images/Union.png" />
             </div>
             <p className="pt-2">Oasis</p>
           </div>
-
           <div className="commasWrapper relative">
             <img src="assets/Images/commas.png" />
           </div>
