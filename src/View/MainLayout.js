@@ -4,9 +4,9 @@ import React from "react";
 const MainLayout = ({ children }) => {
   return (
     <>
-      <div className="absolute top-60  left-60 z-20">
+      {/* <div className="absolute top-60  right-20 z-20">
         <img src="assets/Images/Group.png" />
-      </div>
+      </div> */}
       <div className="absolute bottom-0 left-0 z-20">
         <img src="assets/Images/Vector.png" />
       </div>
@@ -17,7 +17,9 @@ const MainLayout = ({ children }) => {
         >
           <div className="absolute bg-blue-500 top-0 left-0 h-full w-full opacity-90"></div>
           {/* <div className="blueBoiler  lg:w-7/12 bg-blue-500 bg-url('assets/Images/Montreal.jpg') flex flex-col gap-6 pt-48 px-16 text-white min-h-screen"> */}
-
+          {/* <div className=" ">
+            <img src="assets/Images/Group.png" />
+          </div> */}
           <div className="flex absolute top-28 gap-3">
             <div>
               <img src="assets/Images/Union.png" />

@@ -22,7 +22,7 @@ const Profile = () => {
         <p>Residency Info</p>
       </div>
       <div className=" mt-20 px-52 flex flex-col gap-5 pb-6">
-        <h1 className="text-black text-4xl  font-bold mx-auto pr-8">
+        <h1 className="text-black text-4xl  font-bold mx-auto ">
           Complete Your Profile!
         </h1>
         <p className="grey max-w-411 mx-auto">

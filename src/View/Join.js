@@ -9,7 +9,7 @@ const Join = () => {
         </p>
       </div>
       {/* // */}
-      <div className="flex flex-col gap-5 mt-auto">
+      <div className="flex flex-col gap-5 mt-24">
         <h1 className="text-black text-xl  font-bold  flex justify-start pr-80 mx-auto">
           Join Us!
         </h1>
