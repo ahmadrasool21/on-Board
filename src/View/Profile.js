@@ -22,14 +22,14 @@ const Profile = () => {
         <p>Residency Info</p>
       </div>
       <div className=" mt-20 px-52 flex flex-col gap-5 pb-6">
-        <h1 className="text-black text-4xl  font-bold">
+        <h1 className="text-black text-4xl  font-bold mx-auto pr-8">
           Complete Your Profile!
         </h1>
-        <p className="grey max-w-411">
+        <p className="grey max-w-411 mx-auto">
           For the purpose of industry regulation, your details are required.
         </p>
         <form onSubmit={handleSubmit}>
-          <div class="sm:col-span-4 max-w-426">
+          <div class="sm:col-span-4 max-w-426 mx-auto">
             <label
               for="phone"
               class="block text-base	 font-medium leading-6 grey"
@@ -113,7 +113,7 @@ const Profile = () => {
               />
             </div> */}
           </div>
-          <div className="flex gap-2 mt-4  max-w-426 pl-28">
+          <div className="flex gap-2 mt-4  max-w-426 pl-28 mx-auto">
             <div className="mt-1">
               <img src="assets/Images/lock_24px.png" />
             </div>
