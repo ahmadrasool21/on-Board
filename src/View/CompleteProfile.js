@@ -16,9 +16,9 @@ const CompleteProfile = () => {
     },
   });
   return (
-    <div className="pt-10">
-      <div className="flex grey pr-20 justify-end">
-        <p>Bank Verification</p>
+    <div className="">
+      <div className="flex grey justify-end absolute top-5 right-20">
+        <p className="pt-10">Bank Verification</p>
       </div>
       <div className=" mt-20 px-48 flex flex-col gap-5 pb-6">
         <h1 className="text-black text-4xl  font-bold mx-auto pr-16">

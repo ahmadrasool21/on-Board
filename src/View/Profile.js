@@ -17,12 +17,12 @@ const Profile = () => {
     },
   });
   return (
-    <div className="pt-10">
-      <div className="flex grey pr-20 justify-end">
-        <p>Residency Info</p>
+    <div className="">
+      <div className="flex grey pr-20 justify-end absolute top-5 right-20">
+        <p className="pt-10">Residency Info</p>
       </div>
       <div className=" mt-20 px-52 flex flex-col gap-5 pb-6">
-        <h1 className="text-black text-4xl  font-bold mx-auto ">
+        <h1 className="text-black text-4xl  font-bold mx-auto">
           Complete Your Profile!
         </h1>
         <p className="grey max-w-411 mx-auto">

@@ -22,18 +22,18 @@ const Register = () => {
   //   console.log(formik);
   return (
     <div className="pt-10 pb-6">
-      <div className="flex grey pr-20 justify-end">
+      <div className="flex grey absolute top-10 right-20 justify-end">
         <p>Personal Info</p>
       </div>
-      <div className="px-48 mt-14 flex flex-col gap-5">
-        <h1 className="text-black text-4xl  font-bold">
+      <div className=" mt-14 flex flex-col gap-5">
+        <h1 className="text-black text-4xl  font-bold mx-auto pl-7">
           Register Individual Account!
         </h1>
-        <p className="grey max-w-411">
+        <p className="grey max-w-411 mx-auto">
           For the purpose of industry regulation, your details are required.
         </p>
         <form onSubmit={handleSubmit}>
-          <div class="sm:col-span-4 max-w-426">
+          <div class="sm:col-span-4 max-w-426 mx-auto">
             <label
               for="fname"
               class="block text-base	 font-medium leading-6 grey"

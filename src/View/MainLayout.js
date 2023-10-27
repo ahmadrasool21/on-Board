@@ -45,7 +45,7 @@ const MainLayout = ({ children }) => {
             <img src="assets/Images/Vector1.png" />
           </div>
         </div>
-        <div className="whiteboiler  w-full">{children}</div>
+        <div className="whiteboiler m-auto w-full">{children}</div>
       </div>
     </>
   );

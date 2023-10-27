@@ -2,14 +2,14 @@ import React from "react";
 
 const Join = () => {
   return (
-    <div className="pt-10 m-auto">
-      <div className="flex grey pr-20 justify-end">
-        <p>
+    <div className="m-auto">
+      <div className="flex grey  justify-end absolute right-20 top-5">
+        <p className="pt-10">
           Already have an account? <span className="blue pl-1">Sign In</span>
         </p>
       </div>
       {/* // */}
-      <div className="flex flex-col gap-5 mt-24">
+      <div className="flex flex-col gap-5 m-auto">
         <h1 className="text-black text-xl  font-bold  flex justify-start pr-80 mx-auto">
           Join Us!
         </h1>
