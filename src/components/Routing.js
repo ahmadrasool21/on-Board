@@ -7,8 +7,6 @@ import Register from "../View/Register";
 import CompleteProfile from "../View/CompleteProfile";
 
 export default function Routing() {
-  //   const [isAuthenticated, setIsAuthenticated] = useState();
-  //   const [isorder, setisorder] = useState(false);
   return (
     <Router>
       <div>

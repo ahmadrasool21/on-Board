@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
 import { useFormik } from "formik";
-import { ProfileValidation } from "../components/ProfileValidation";
+import { ProfileValidation } from "../Validation/ProfileValidation";
 
 const initialValues = {
   address: " ",
@@ -21,7 +21,7 @@ const Profile = () => {
       <div className="flex grey pr-20 justify-end absolute top-5 right-20">
         <p className="pt-2">Residency Info</p>
       </div>
-      <div className=" mt-20 px-52 flex flex-col gap-5 pb-6">
+      <div className=" mt-auto px-52 flex flex-col gap-5 pb-6">
         <h1 className="text-black text-2xl xl:text-3xl 	font-bold mx-auto pr-16">
           Complete Your Profile!
         </h1>

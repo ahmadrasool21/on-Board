@@ -2,7 +2,7 @@ import React from "react";
 
 const Join = () => {
   return (
-    <div className="m-auto">
+    <div className="  mb-auto mt-auto">
       <div className="flex grey  justify-end absolute right-20 top-5 ">
         <p className="pt-10">
           Already have an account? <span className="blue pl-1">Sign In</span>

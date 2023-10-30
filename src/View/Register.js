@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
-import { RegisterValidation } from "../components/RegisterValidation";
+import { RegisterValidation } from "../Validation/RegisterValidation";
 import { useFormik } from "formik";
 // import { reg_Validate } from "../components/RegisterValidation";
 
