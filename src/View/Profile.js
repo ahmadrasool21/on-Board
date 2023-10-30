@@ -19,10 +19,10 @@ const Profile = () => {
   return (
     <div className="">
       <div className="flex grey pr-20 justify-end absolute top-5 right-20">
-        <p className="pt-10">Residency Info</p>
+        <p className="pt-2">Residency Info</p>
       </div>
       <div className=" mt-20 px-52 flex flex-col gap-5 pb-6">
-        <h1 className="text-black text-4xl  font-bold mx-auto">
+        <h1 className="text-black text-2xl xl:text-3xl 	font-bold mx-auto pr-16">
           Complete Your Profile!
         </h1>
         <p className="grey max-w-411 mx-auto">
