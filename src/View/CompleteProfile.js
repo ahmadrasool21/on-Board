@@ -2,17 +2,20 @@ import React from "react";
 import Button from "../components/Button";
 import { CmpValidation } from "../Validation/CmpValidation";
 import { useFormik } from "formik";
+import { useNavigate } from "react-router-dom";
 
 const initialValues = {
   name: " ",
 };
 
 const CompleteProfile = () => {
+  const navigate = useNavigate();
   const { values, errors, handleBlur, handleChange, handleSubmit } = useFormik({
     initialValues: initialValues,
     validationSchema: CmpValidation,
     onSubmit: (values) => {
       console.log(values);
+      navigate("/");
     },
   });
   return (

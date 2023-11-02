@@ -2,8 +2,8 @@ import React from "react";
 import Button from "../components/Button";
 import { useFormik } from "formik";
 import { ProfileValidation } from "../Validation/ProfileValidation";
-import PhoneInput from "../components/PhoneInput";
-import { useState } from "react";
+// import PhoneInput from "../components/PhoneInput";
+import { useNavigate } from "react-router-dom";
 
 const initialValues = {
   address: " ",
@@ -11,11 +11,13 @@ const initialValues = {
 };
 
 const Profile = () => {
+  const navigate = useNavigate();
   const { values, errors, handleBlur, handleChange, handleSubmit } = useFormik({
     initialValues: initialValues,
     validationSchema: ProfileValidation,
     onSubmit: (values) => {
       console.log(values);
+      navigate("/AddProfile");
     },
   });
   return (

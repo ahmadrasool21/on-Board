@@ -2,6 +2,10 @@ import React from "react";
 import Button from "../components/Button";
 import { RegisterValidation } from "../Validation/RegisterValidation";
 import { useFormik } from "formik";
+import { useNavigate } from "react-router-dom";
+
+// import { useHistory } from "history";
+
 // import { reg_Validate } from "../components/RegisterValidation";
 
 const initialValues = {
@@ -12,11 +16,14 @@ const initialValues = {
 };
 
 const Register = () => {
+  // const history = useHistory();
+  const navigate = useNavigate();
   const { values, errors, handleBlur, handleChange, handleSubmit } = useFormik({
     initialValues: initialValues,
     validationSchema: RegisterValidation,
     onSubmit: (values) => {
       console.log(values);
+      navigate("/Profile");
     },
   });
   //   console.log(formik);

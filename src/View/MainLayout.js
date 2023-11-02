@@ -1,6 +1,6 @@
 // SharedLayout.js
 import React from "react";
-
+import { Link } from "react-router-dom";
 const MainLayout = ({ children, header, sign }) => {
   return (
     <>
@@ -57,7 +57,9 @@ const MainLayout = ({ children, header, sign }) => {
           <div className="flex grey justify-end pr-10">
             <p className="pt-8 ">
               {header}
-              <span className="blue pl-1">{sign}</span>
+              <span className="blue pl-1">
+                <Link to="/Register">{sign}</Link>
+              </span>
             </p>
           </div>
           {children}

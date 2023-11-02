@@ -15,7 +15,7 @@ export default function Routing() {
             exact
             path="/"
             element={
-              <MainLayout header="Already have an account?" sign="Sign In">
+              <MainLayout header="Already have an account?" sign="Sign Up">
                 <Join />
               </MainLayout>
             }
