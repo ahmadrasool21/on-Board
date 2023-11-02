@@ -1,16 +1,11 @@
 import React from "react";
 
-const Join = () => {
+const Join = (props) => {
   return (
-    <div className="  mb-auto mt-auto">
-      <div className="flex grey  justify-end absolute right-20 top-5 ">
-        <p className="pt-10">
-          Already have an account? <span className="blue pl-1">Sign In</span>
-        </p>
-      </div>
+    <div className="flex justify-center items-center min-h-screen">
       {/* // */}
       <div className="flex flex-col gap-5 m-auto">
-        <h1 className="text-black text-xl  font-bold  flex justify-start pr-80 mx-auto">
+        <h1 className="text-black text-xl  font-bold  flex justify-start">
           Join Us!
         </h1>
         <p className="grey max-w-411 mx-auto">

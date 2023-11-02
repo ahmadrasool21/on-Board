@@ -15,7 +15,7 @@ export default function Routing() {
             exact
             path="/"
             element={
-              <MainLayout>
+              <MainLayout header="Already have an account?" sign="Sign In">
                 <Join />
               </MainLayout>
             }
@@ -24,7 +24,7 @@ export default function Routing() {
             exact
             path="/Register"
             element={
-              <MainLayout>
+              <MainLayout header="Personal Info" sign=" ">
                 <Register />
               </MainLayout>
             }
@@ -33,7 +33,7 @@ export default function Routing() {
             exact
             path="/Profile"
             element={
-              <MainLayout>
+              <MainLayout header="Residency Info" sign=" ">
                 <Profile />
               </MainLayout>
             }
@@ -43,7 +43,7 @@ export default function Routing() {
             exact
             path="/AddProfile"
             element={
-              <MainLayout>
+              <MainLayout header="Bank Verification" sign=" ">
                 <CompleteProfile />
               </MainLayout>
             }

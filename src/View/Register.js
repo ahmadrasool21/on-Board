@@ -21,10 +21,7 @@ const Register = () => {
   });
   //   console.log(formik);
   return (
-    <div className="pt-10 pb-6">
-      <div className="flex grey absolute top-10 right-20 justify-end">
-        <p>Personal Info</p>
-      </div>
+    <div className="flex justify-center items-center min-h-screen">
       <div className=" mt-14 flex flex-col gap-5">
         <h1 className="text-black text-4xl  font-bold mx-auto pl-7">
           Register Individual Account!

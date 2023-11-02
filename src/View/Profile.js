@@ -2,6 +2,8 @@ import React from "react";
 import Button from "../components/Button";
 import { useFormik } from "formik";
 import { ProfileValidation } from "../Validation/ProfileValidation";
+import PhoneInput from "../components/PhoneInput";
+import { useState } from "react";
 
 const initialValues = {
   address: " ",
@@ -17,12 +19,12 @@ const Profile = () => {
     },
   });
   return (
-    <div className="">
-      <div className="flex grey pr-20 justify-end absolute top-5 right-20">
+    <div className="flex justify-center items-center min-h-screen">
+      {/* <div className="flex grey  justify-end absolute top-5 right-20">
         <p className="pt-2">Residency Info</p>
-      </div>
-      <div className=" mt-auto px-52 flex flex-col gap-5 pb-6">
-        <h1 className="text-black text-2xl xl:text-3xl 	font-bold mx-auto pr-16">
+      </div> */}
+      <div className=" pl-2 pr-2 flex flex-col gap-5 pb-6">
+        <h1 className="text-black text-2xl xl:text-3xl 	font-bold">
           Complete Your Profile!
         </h1>
         <p className="grey max-w-411 mx-auto">
@@ -50,6 +52,7 @@ const Profile = () => {
               />
             </div>
             {errors.phone && <small>{errors.phone}</small>}
+            {/* <PhoneInput /> */}
             {/* /// */}
             <label
               for="email"
@@ -113,7 +116,7 @@ const Profile = () => {
               />
             </div> */}
           </div>
-          <div className="flex gap-2 mt-4  max-w-426 pl-28 mx-auto">
+          <div className="flex gap-2 mt-4  max-w-426 justify-center mx-auto">
             <div className="mt-1">
               <img src="assets/Images/lock_24px.png" />
             </div>
