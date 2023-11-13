@@ -23,18 +23,18 @@ const CompleteProfile = () => {
       {/* <div className="flex grey justify-end absolute top-5 right-20">
         <p className="pt-10">Bank Verification</p>
       </div> */}
-      <div className=" mt-20 px-48 flex flex-col gap-5 pb-6">
-        <h1 className="text-black text-2xl xl:text-3xl  font-bold mx-auto pr-16">
+      <div className=" flex flex-col gap-5 ">
+        <h1 className="text-black text-xl sm:text-2xl xl:text-3xl  font-bold ">
           Complete Your Profile!
         </h1>
-        <p className="grey max-w-411 mx-auto">
+        <p className="grey max-w-411 mx-auto text-sm sm:text-base">
           For the purpose of industry regulation, your details are required.
         </p>
         <form onSubmit={handleSubmit}>
-          <div class="sm:col-span-4 max-w-426 mx-auto">
+          <div class="sm:col-span-4 max-w-426 mx-auto ">
             <label
               for="name"
-              class="block text-base	 font-medium leading-6 grey"
+              class="block text-sm sm:text-base	 font-medium leading-6 grey"
             >
               Bank verification number (BVN)
             </label>
@@ -56,18 +56,20 @@ const CompleteProfile = () => {
 
             <Button
               classNames={
-                "mt-4 max-w-426 min-h-64 bg-red py-4 px-36 w-full rounded text-sm bg-blue-700 text-white"
+                "mt-4 max-w-426 min-h-64 bg-red py-4  w-full rounded text-sm bg-blue-700 text-white"
               }
             >
               Save and Continue
             </Button>
             {/* /// */}
           </div>
-          <div className="flex gap-2 mt-4  max-w-426 pl-28 mx-auto">
+          <div className="flex gap-2 mt-4  max-w-426 justify-center">
             <div className="mt-1">
               <img src="assets/Images/lock_24px.png" />
             </div>
-            <p className="grey">Your Info is safely secured</p>
+            <p className="grey text-sm sm:text-base">
+              Your Info is safely secured
+            </p>
           </div>
         </form>
       </div>
