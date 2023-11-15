@@ -2,8 +2,9 @@ import React from "react";
 import Button from "../components/Button";
 import { useFormik } from "formik";
 import { ProfileValidation } from "../Validation/ProfileValidation";
-// import PhoneInput from "../components/PhoneInput";
 import { useNavigate } from "react-router-dom";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const initialValues = {
   address: " ",
@@ -39,49 +40,71 @@ const Profile = () => {
               Phone Number*
             </label>
             {/* /// */}
-            <div class="mt-2">
+            {/* <div class="mt-2 relative">
               <input
                 id="phone"
                 name="phone"
                 type="tel"
                 placeholder="Enter Phone Number"
+                // value={values.phone}
+                onBlur={handleBlur}
+                onChange={handleChange}
+                class="block w-full rounded-md border-0 py-3 sm:py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xs sm:text-sm sm:leading-6 mb-2 pl-7"
+              />
+              {errors.phone && touched.phone && (
+                <small className="absolute text-red-500	text-xs">
+                  {errors.phone}
+                </small>
+              )}
+            </div> */}
+            {/* //// */}
+            <div class="mt-2 relative">
+              <PhoneInput
+                country={"us"}
+                // value={this.state.phone}
+                placeholder="Enter Phone Number"
                 value={values.phone}
                 onBlur={handleBlur}
                 onChange={handleChange}
-                class="block w-full rounded-md border-0 py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mb-2 pl-7"
+                countryCodeEditable={false}
+                class="block w-full rounded-md border-0 py-3 sm:py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xs sm:text-sm sm:leading-6 mb-2 pl-7"
               />
+              {errors.phone && touched.phone && (
+                <small className="absolute text-red-500	text-xs">
+                  {errors.phone}
+                </small>
+              )}
             </div>
-            {/* {errors.phone && <small>{errors.phone}</small>} */}
-            {errors.phone && touched.phone && <small>{errors.phone}</small>}
-            {/* <PhoneInput /> */}
+
             {/* /// */}
             <label
               for="email"
-              class="block text-xs sm:text-base	 font-medium leading-6 grey"
+              class="block text-xs sm:text-base	 font-medium leading-6 grey mt-9"
             >
               Your address*
             </label>
-            <div class="mt-2">
+            <div class="mt-2 relative">
               <input
                 id="address"
                 name="address"
                 type="text"
                 placeholder="Please enter address"
-                value={values.address}
+                // value={values.address}
                 onBlur={handleBlur}
                 onChange={handleChange}
-                class="block w-full rounded-md border-0 py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mb-2 pl-7"
+                class="block w-full rounded-md border-0 py-3 sm:py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xs sm:text-sm sm:leading-6 mb-2 pl-7"
               />
+              {errors.address && touched.address && (
+                <small className="absolute text-red-500	text-xs">
+                  {errors.address}
+                </small>
+              )}
             </div>
-            {/* {errors.address && <small>{errors.address}</small>} */}
-            {errors.address && touched.address && (
-              <small>{errors.address}</small>
-            )}
 
             {/* /// */}
             <label
               for="email"
-              class="block text-xs sm:text-base  font-medium  leading-6  grey"
+              class="block text-xs sm:text-base  font-medium  leading-6  grey mt-9"
             >
               Country of Residence
             </label>
@@ -90,7 +113,7 @@ const Profile = () => {
                 id="country"
                 name="country"
                 placeholder="please Select"
-                class=" block w-full rounded-md border-0 py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2  focus:ring-blue-600 sm:text-sm sm:leading-6 mb-2 pl-7 "
+                class=" block w-full rounded-md border-0 py-3 sm:py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2  focus:ring-blue-600 text-xs sm:text-sm sm:leading-6 mb-2 pl-7 "
               >
                 <option>United States</option>
                 <option>Canada</option>
@@ -98,28 +121,14 @@ const Profile = () => {
               </select>
             </div>
             {/* /// */}
-            {/* <div class="relative flex gap-x-3 mt-4"></div> */}
-            {/* /// */}
 
             <Button
               classNames={
-                "mt-4 max-w-426 min-h-64 bg-red py-4 mx-auto w-full rounded text-sm bg-blue-700 text-white"
+                "mt-4 max-w-426 min-h-64 bg-red py-3.5 sm:py-4 mx-auto w-full rounded text-sm bg-blue-700 text-white"
               }
             >
               Save and Continue
             </Button>
-            {/* /// */}
-            {/* <div class="flex items-center">
-              <select class="px-2 py-1 border rounded-l">
-                <option value="+1">+1 (USA)</option>
-                <option value="+44">+44 (UK)</option>
-              </select>
-              <input
-                type="text"
-                class="px-2 py-1 border-r rounded-r"
-                placeholder="Phone Number"
-              />
-            </div> */}
           </div>
           <div className="flex gap-2 mt-4  max-w-426 justify-center mx-auto">
             <div className="mt-1">

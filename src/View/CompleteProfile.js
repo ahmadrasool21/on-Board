@@ -39,24 +39,29 @@ const CompleteProfile = () => {
               Bank verification number (BVN)
             </label>
             {/* /// */}
-            <div class="mt-2">
+            <div class="mt-2 relative">
               <input
                 id="name"
                 name="name"
                 type="text"
                 placeholder="Add BVN"
-                value={values.name}
+                // value={values.name}
                 onBlur={handleBlur}
                 onChange={handleChange}
-                class="block w-full rounded-md border-0 py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mb-2 pl-7"
+                class="block w-full rounded-md border-0 py-3 sm:py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mb-2 pl-7"
               />
+              {errors.name && (
+                <small className="absolute text-red-500	text-xs">
+                  {errors.name}
+                </small>
+              )}
             </div>
-            {errors.name && <small>{errors.name}</small>}
+            {/* {errors.name && <small>{errors.name}</small>} */}
             {/* /// */}
 
             <Button
               classNames={
-                "mt-4 max-w-426 min-h-64 bg-red py-4  w-full rounded text-sm bg-blue-700 text-white"
+                "mt-8 max-w-426 min-h-64 bg-red py-4  w-full rounded text-sm bg-blue-700 text-white"
               }
             >
               Save and Continue

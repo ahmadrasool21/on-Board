@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 // import { reg_Validate } from "../components/RegisterValidation";
 
 const initialValues = {
-  fname: " ",
+  firstname: " ",
   email: " ",
   password: " ",
   offers: " ",
@@ -38,37 +38,41 @@ const Register = () => {
           For the purpose of industry regulation, your details are required.
         </p>
         <form onSubmit={handleSubmit}>
-          <div class="sm:col-span-0 flex-shrink max-w-426 mx-auto">
+          <div class="sm:col-span-0  max-w-426 mx-auto">
             {/* <div class="sm:col-span-4 flex-shrink max-w-426 mx-auto sm:w-full md:w-1/2 lg:w-1/3"> */}
             <label
-              for="fname"
+              for="firstname"
               class="block text-xs sm:text-base	 font-medium leading-6 grey"
             >
               Your full Name*
             </label>
             {/* /// */}
-            <div class="mt-2">
+            <div class="mt-2 relative">
               <input
-                id="fname"
-                name="fname"
+                id="firstname"
+                name="firstname"
                 type="text"
                 placeholder="Invictus Innocent"
-                value={values.fname}
+                // value={values.firstname}
                 onBlur={handleBlur}
                 onChange={handleChange}
-                class="block w-full rounded-md border-0 py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mb-2 pl-7"
+                class="block w-full rounded-md border-0 py-3 sm:py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xs sm:text-sm sm:leading-6 mb-2 pl-7"
               />
+              {errors.firstname && touched.firstname && (
+                <small className="absolute text-red-500	text-xs">
+                  {errors.firstname}
+                </small>
+              )}
             </div>
-            {/* {errors.fname && <small>{errors.fname}</small>} */}
-            {errors.fname && touched.fname && <small>{errors.fname}</small>}
+            {/* {errors.fname && touched.fname && <small>{errors.fname}</small>} */}
             {/* /// */}
             <label
               for="email"
-              class="block text-xs sm:text-base	 font-medium leading-6 grey"
+              class="block text-xs sm:text-base	 font-medium leading-6 grey mt-9"
             >
               Email address*
             </label>
-            <div class="mt-2">
+            <div class="mt-2 relative">
               <input
                 id="email"
                 name="email"
@@ -77,19 +81,23 @@ const Register = () => {
                 value={values.email}
                 onBlur={handleBlur}
                 onChange={handleChange}
-                class="block w-full rounded-md border-0 py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mb-2 pl-7"
+                class="block w-full rounded-md border-0 py-3 sm:py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 text-xs sm:text-sm sm:leading-6 mb-2 pl-7"
               />
+              {errors.email && touched.email && (
+                <small className="absolute text-red-500	text-xs">
+                  {errors.email}
+                </small>
+              )}
             </div>
-            {/* {errors.email && <small>{errors.email}</small>} */}
-            {errors.email && touched.email && <small>{errors.email}</small>}
+
             {/* /// */}
             <label
               for="email"
-              class="block text-xs sm:text-base	 font-medium leading-6 grey"
+              class="block text-xs sm:text-base	 font-medium leading-6 grey mt-9"
             >
               Create Password*
             </label>
-            <div class="mt-2">
+            <div class="mt-2 relative">
               <input
                 id="passsword"
                 name="password"
@@ -98,16 +106,17 @@ const Register = () => {
                 value={values.password}
                 onBlur={handleBlur}
                 onChange={handleChange}
-                class="block w-full rounded-md border-0 py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2  focus:ring-blue-600 sm:text-sm sm:leading-6 mb-2 pl-7 "
+                class="block w-full rounded-md border-0 py-3 sm:py-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2  focus:ring-blue-600 text-xs sm:text-sm sm:leading-6 mb-2 pl-7 "
               />
+              {errors.password && touched.password && (
+                <small className="absolute text-red-500	text-xs">
+                  {errors.password}
+                </small>
+              )}
             </div>
-            {/* {errors.password && <small>{errors.password}</small>} */}
-            {errors.password && touched.password && (
-              <small>{errors.password}</small>
-            )}
 
             {/* /// */}
-            <div class="relative flex gap-x-3 mt-4">
+            <div class="relative flex gap-x-3 mt-9">
               <div class="flex h-6 items-center">
                 <input
                   id="offers"
@@ -130,7 +139,7 @@ const Register = () => {
 
             <Button
               classNames={
-                "mt-4 max-w-426 min-h-64 bg-red py-4 mx-auto w-full rounded text-sm bg-blue-700 text-white"
+                "mt-4 max-w-426 min-h-64 bg-red py-3.5 sm:py-4 mx-auto w-full rounded text-sm bg-blue-700 text-white"
               }
             >
               Register Account
@@ -139,7 +148,7 @@ const Register = () => {
             <hr className="mt-4 mb-6" />
             <Button
               classNames={
-                "mt-4 max-w-426 min-h-64 bg-red py-4 mx-auto w-full  shadow-lg rounded text-sm  text-black"
+                "mt-4 max-w-426 min-h-64 bg-red py-3.5 sm:py-4 mx-auto w-full  shadow-lg rounded text-sm  text-black"
               }
             >
               <div className="flex gap-10 justify-center">
